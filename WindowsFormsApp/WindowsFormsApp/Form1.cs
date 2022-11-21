@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -60,6 +61,17 @@ namespace WindowsFormsApp
                 }
             }
             txtPrecio.Text = coste.ToString() + " euros";
+        }
+
+        private void bt1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int num = 0;
+            num = int.Parse(Interaction.InputBox("Numero: "));
         }
     }
 }
